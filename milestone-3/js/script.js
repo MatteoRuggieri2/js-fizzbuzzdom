@@ -12,15 +12,15 @@ for( let i = 1; i <= 100; i++ ) {
     let squareContainer = document.getElementById("square-container");
     if( i % 3 === 0 && i % 5 === 0 ){
         fizzBuzz = 'FizzBuzz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        squareContainer.innerHTML += `<div class="box fizz-buzz">${fizzBuzz}</div>`
 
     } else if( i % 3 === 0 ) {
         fizzBuzz = 'Fizz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        squareContainer.innerHTML += `<div class="box fizz">${fizzBuzz}</div>`
 
     } else if( i % 5 === 0 ) {
         fizzBuzz = 'Buzz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        squareContainer.innerHTML += `<div class="box buzz">${fizzBuzz}</div>`
 
     } else {
         squareContainer.innerHTML += `<div class="box">${i}</div>`
