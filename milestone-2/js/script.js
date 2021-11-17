@@ -10,19 +10,19 @@ for( let i = 1; i <= 100; i++ ) {
     let fizzBuzz;
     let squareContainer = document.getElementById("square-container");
     if( i % 3 === 0 && i % 5 === 0 ){
-        fizzBuzz = 'FizzBuzz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        fizzBuzz = 'FizzBuzz';
 
     } else if( i % 3 === 0 ) {
-        fizzBuzz = 'Fizz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        fizzBuzz = 'Fizz';
 
     } else if( i % 5 === 0 ) {
-        fizzBuzz = 'Buzz'
-        squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
+        fizzBuzz = 'Buzz';
 
     } else {
-        squareContainer.innerHTML += `<div class="box">${i}</div>`
+        fizzBuzz = i;
     }
+
+    // OUTPUT
+    squareContainer.innerHTML += `<div class="box">${fizzBuzz}</div>`
 
 }
