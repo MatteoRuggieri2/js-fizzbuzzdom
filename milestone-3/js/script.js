@@ -10,20 +10,27 @@ for( let i = 1; i <= 100; i++ ) {
 
     let fizzBuzz;
     let squareContainer = document.getElementById("square-container");
+    let squareColor;
     if( i % 3 === 0 && i % 5 === 0 ){
-        fizzBuzz = 'FizzBuzz'
-        squareContainer.innerHTML += `<div class="box fizz-buzz">${fizzBuzz}</div>`
+        fizzBuzz = 'FizzBuzz';
+        squareColor = 'fizz-buzz';
 
     } else if( i % 3 === 0 ) {
-        fizzBuzz = 'Fizz'
-        squareContainer.innerHTML += `<div class="box fizz">${fizzBuzz}</div>`
+        fizzBuzz = 'Fizz';
+        squareColor = 'fizz';
+
 
     } else if( i % 5 === 0 ) {
-        fizzBuzz = 'Buzz'
-        squareContainer.innerHTML += `<div class="box buzz">${fizzBuzz}</div>`
+        fizzBuzz = 'Buzz';
+        squareColor = 'buzz';
+
 
     } else {
-        squareContainer.innerHTML += `<div class="box">${i}</div>`
+        fizzBuzz = i;
+
     }
+
+    // OUTPUT
+    squareContainer.innerHTML += `<div class="box ${squareColor}">${fizzBuzz}</div>`
 
 }
